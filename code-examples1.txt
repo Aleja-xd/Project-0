@@ -1,0 +1,26 @@
+//Código generado por IA
+NEW VAR steps = 5;
+NEW VAR balloons = 3;
+
+// Definición de macros
+NEW MACRO moveAndDrop (n, b) {
+    walk(n);
+    drop(b);
+}
+
+// Ejecución de comandos
+EXEC {
+    // Moverse y dejar caer globos
+    moveAndDrop(steps, balloons);
+
+    // Girar a la derecha y moverse
+    turnToMy(right);
+    walk(2);
+
+    // Colocar un chip y saltar
+    drop (1);
+    jump(3);
+
+    // Ir a una posición específica
+    go(4, 4);
+}
